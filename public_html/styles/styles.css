@@ -1,0 +1,198 @@
+.search-page .text {
+    padding: 10px 0;
+}
+.block-author__ratingCount {
+    display: none;
+}
+.user-actions__link.mob-search.close::before,
+.user-actions__link.mob-search.close::after {
+    top: 35px;
+}
+div.page-search {
+    top: 75px !important;
+}
+div.partners {
+    background-color: #fff;
+}
+.footer-menu__title {
+    line-height: 110%;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.js-bookmark {
+    cursor: pointer;
+}
+.blue-quote {
+    position: relative;
+    background: #edf5fb;
+    border-radius: 10px;
+    padding: 24px 50px 24px 121px;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.7;
+    color: #788fa9;
+    margin: 20px 0;
+}
+.blue-quote:before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 32px;
+    position: absolute;
+    top: 33px;
+    left: 49px;
+    background: url("../img/quote1.svg") no-repeat center / contain;
+}
+.orange-attention {
+    position: relative;
+    background: linear-gradient(90deg, rgba(242, 146, 76, 0.3) 0, rgba(242, 205, 76, 0.3) 100%);
+    border-radius: 10px;
+    padding: 24px 34px 24px 76px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.85;
+    color: #333;
+    margin: 20px 0;
+}
+.orange-attention:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    background: url("../img/block-info.svg") no-repeat center / contain;
+}
+.green-advice {
+    position: relative;
+    background: linear-gradient(90deg, rgba(97, 191, 106, 0.3) 0, rgba(176, 238, 127, 0.3) 100%);
+    border-radius: 10px;
+    padding: 24px 34px 24px 76px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.85;
+    color: #333;
+    margin: 20px 0;
+}
+.green-advice:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    background: url("../img/block-info2.svg") no-repeat center / contain;
+}
+.blue-info {
+    position: relative;
+    background: linear-gradient(90deg, rgba(149, 174, 219, 0.3) 0, rgba(162, 170, 239, 0.3) 100%);
+    border-radius: 10px;
+    padding: 24px 34px 24px 76px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.85;
+    color: #333;
+    margin: 20px 0;
+}
+.blue-info:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    background: url("../img/block-info3.svg") no-repeat center / contain;
+}
+.example-text {
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    color: #788fa9;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.85;
+}
+.formula-block {
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.7;
+    text-align: center;
+    color: #333;
+    background: #f7f7f7;
+    padding: 24px 48px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.g-formula__inner {
+    text-align: center;
+}
+.g-formula {
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.7;
+    text-align: center;
+    color: #333;
+    background: #f7f7f7;
+    padding: 24px 48px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+.g-formula span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.4;
+}
+@media screen and (max-width: 767px) {
+    .blue-quote {
+        padding: 24px 16px 24px 62px;
+        border-radius: 0;
+        font-size: 18px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .blue-quote:before {
+        left: 16px;
+        top: 24px;
+        width: 30px;
+        height: 30px;
+    }
+    .orange-attention {
+        border-radius: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 62px;
+    }
+    .orange-attention:before {
+        left: 16px;
+    }
+    .green-advice {
+        border-radius: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 62px;
+    }
+    .green-advice:before {
+        left: 16px;
+    }
+    .blue-info {
+        border-radius: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-left: 62px;
+    }
+    .blue-info:before {
+        left: 16px;
+    }
+}

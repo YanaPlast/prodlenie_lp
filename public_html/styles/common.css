@@ -1,0 +1,95 @@
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.intro .container,
+.partners .container,
+.experience .container,
+.pros .container,
+.n-steps .container,
+.help .container,
+.steps .container,
+.n2-tariffs .container,
+.max .container,
+.ask .container,
+.why .container,
+.n-why .container,
+.our-blogs .container,
+.reviews .container,
+.choose .container,
+.faq .container,
+.n-faq .container,
+.gifts .container,
+.share .container {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: content-box;
+    width: auto;
+}
+
+.faq .container {
+    max-width: 1210px;
+}
+.hide {
+    display: none;
+}
+@media screen and (max-width: 960px) {
+
+    .intro .container,
+    .partners .container,
+    .experience .container,
+    .pros .container,
+    .n-steps .container,
+    .n2-tariffs .container,
+    .help .container,
+    .steps .container,
+    .max .container,
+    .ask .container,
+    .why .container,
+    .n-why .container,
+    .our-blogs .container,
+    .reviews .container,
+    .choose .container,
+    .faq .container,
+    .n-faq .container,
+    .gifts .container,
+    .share .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media screen and (max-width: 640px) {
+
+    .intro .container,
+    .partners .container,
+    .experience .container,
+    .pros .container,
+    .n-steps .container,
+    .help .container,
+    .n2-tariffs .container,
+    .steps .container,
+    .max .container,
+    .ask .container,
+    .why .container,
+    .n-why .container,
+    .our-blogs .container,
+    .reviews .container,
+    .choose .container,
+    .faq .container,
+    .n-faq .container,
+    .gifts .container,
+    .share .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
