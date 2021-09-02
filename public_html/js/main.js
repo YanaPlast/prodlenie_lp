@@ -177,7 +177,7 @@ $(document).ready(function () {
             arrows: !0,
             prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><svg class="icon-el"><use xlink:href="#arrow-l3"></use></svg></button>',
             nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><svg class="icon-el"><use xlink:href="#arrow-r3"></use></svg></button>',
-            slidesToShow: 7,
+            slidesToShow: 4,
             speed: 200,
             dots: false,
             draggable: true,
@@ -192,8 +192,8 @@ $(document).ready(function () {
             appendDots: $(".partners__dots"),
             responsive: [
                 { breakpoint: 960, settings: { slidesToShow: 4 } },
-                { breakpoint: 768, settings: { slidesToShow: 4 } },
-                { breakpoint: 560, settings: { slidesToShow: 3 } },
+                { breakpoint: 768, settings: { slidesToShow: 3 } },
+                { breakpoint: 560, settings: { slidesToShow: 1 } },
             ],
         });
     })();
@@ -509,7 +509,7 @@ $(document).ready(function () {
     })();
     (function () {
         new TypeIt(".intro__title span", {
-            strings: ["на товарный знак", "на промышленный образец", "на изобретение"],
+            strings: ["на товарный знак", "на промышленный образец", "на изобретение", "на полезную модель"],
             autoStart: true,
             speed: 50,
             lifeLike: true,
@@ -558,76 +558,3 @@ $(function () {
 // всплывающее окно
 
 $(".fancybox").fancybox();
-
-var clickEvent = document.ontouchstart !== null ? 'click' : 'touchstart';
-
-// проверка форм на ошибки
-    $('.form-container form').on('submit', function (e) {
-        var formId = $(this).find('input[name="title"]').val();
-        var arrayOpt = [],
-            pattern = /([<>'"#])+/i,
-            itsOK = true,
-            check = true;
-
-        if (formId == "Map") {
-
-            if ($(this).find('input[name="email"]').val() == "") {
-                $mail = $(this).find('input[name="email"]');
-                $mail.closest('label').addClass('error');
-                $mail.val('Вы не ввели ' + $mail.data('hint'));
-                check = false;
-                e.preventDefault();
-            }
-
-        } else {
-
-            $phone_num = $(this).find('input[name="phone"]').val().replace(/\D+/g, "");  
-            
-            if ($phone_num.length < 11) {
-                $phone = $(this).find('input[name="phone"]');
-                $phone.closest('label').addClass('error');
-                $phone.val('Введите корректный номер');
-                check = false;
-                e.preventDefault();
-            }
-
-            /*        $(this).find('input:not([type="submit"])').each(function(index) {
-                        if($(this).val() == "") {
-                            $(this).closest('label').addClass('error');
-                            $(this).val('Вы не ввели ' + $(this).data('hint'));
-                            check = false;
-                            e.preventDefault();
-                        }
-                    });*/
-
-        }
-
-        if ($(this).find('input[name="name_family"]').val() !== '') {
-            check = false;
-        }
-
-        if (check == true) {
-            var oldval = $(this).find('input[type="submit"]').val();
-            $(this).find('input[type="submit"]').val("Подождите...");
-            $(this).find('input[type="submit"]').attr("disabled", "disabled");
-            setTimeout(function() {
-                $(this).find('input[type="submit"]').removeAttr("disabled");
-                $(this).find('input[type="submit"]').val(oldval);
-            }, 6000);
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({'event': formId});
-            console.log('event', formId);
-
-            $.close_flag = true; // не показываем всплывашку, если отправлена заявка
-        }
-
-    });
-
-    // убираем сообщение об ошибке на форме при установке курсора
-    $('.form-container form input:not([type="submit"])').on(clickEvent, function () {
-        if ($(this).closest('label').hasClass('error')) {
-            $(this).val('');
-            $(this).closest('label').removeClass('error');
-        }
-
-    });

@@ -1,0 +1,14 @@
+User-agent: *
+Host: https://press-affe.ru
+Sitemap: https://press-affe.ru/sitemap.xml
+User-agent: *
+Disallow: /
+Disallow: /*?*
+Disallow: /*&*
+
+
+User-agent: Yandex
+Disallow: /
+Disallow: /*?*
+Disallow: /*&*
+
