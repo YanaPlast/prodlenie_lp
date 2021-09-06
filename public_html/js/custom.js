@@ -76,7 +76,7 @@ var clickEvent = document.ontouchstart !== null ? 'click' : 'touchstart';
     }
 }); */
 
-$('#step1').add('#call-modal').on('submit', function (e) {
+$('#step1').add('#call-modal').add('#tarif-order').on('submit', function (e) {
       var check = true;
       var formId = $(this).find('input[name="title"]').val();
         
@@ -100,7 +100,8 @@ $('#step1').add('#call-modal').on('submit', function (e) {
             e.preventDefault();
         }
     }
-    if (check == true && formId == "#step1") {   
+
+    if (check == true && formId == "step1") {   
         e.preventDefault();
         $.fancybox.close();
 	    $.fancybox.open({
@@ -113,7 +114,7 @@ $('#step1').add('#call-modal').on('submit', function (e) {
                 overlay : {closeClick: false} // prevents closing when clicking OUTSIDE fancybox
             }
 	    });
-    } else if (check == true && formId == "#call-modal") {
+    } else if (check == true && formId == "Call-order") {
 
         var oldval = $(this).find('input[type="submit"]').val();
         $(this).find('input[type="submit"]').val("Подождите...");
@@ -172,7 +173,7 @@ $('#step2 form').on('submit', function (e) {
         }
 }); 
 
-// убираем сообщение об ошибке на форме при установке курсора
+ // убираем сообщение об ошибке на форме при установке курсора
 
     $('.form-container form input:not([type="submit"])').on(clickEvent, function () {
         if ($(this).closest('label').hasClass('error')) {
@@ -181,7 +182,7 @@ $('#step2 form').on('submit', function (e) {
         }
     });
 
-// выравниваем по высоте примечания в тарифах
+    // выравниваем по высоте примечания в тарифах
 
      function equalHight () {
         let elems = $('#tariffs .js-match-height-bottom');
@@ -198,5 +199,56 @@ $('#step2 form').on('submit', function (e) {
     };
 
     equalHight (); 
+
+$.tarifs = {
+        tz: {
+            id: '00000',
+            name: 'Продление товарного знака',
+            old_price: 6990,
+            new_price: 3990,
+            discount: 20,
+            descript: 'подзаголовок/описание или ничего',
+        },
+        tz_changes: {
+            id: '11111',
+            name: 'Товарный знак: продление + изменения',
+            old_price: 16990,
+            new_price: 6990,
+            discount: 30,
+            descript: 'подзаголовок / описание',
+        },
+        izobretenie: {
+            id: '2222222',
+            name: 'Продление прав на изобретение',
+            old_price: 6990,
+            new_price: 3990,
+            discount: 10,
+            descript: 'подзаголовок или описание',
+        },        
+        prom_obrazec: {
+            id: '333333',
+            name: 'Продление прав на промышленный образец',
+            old_price: 6990,
+            new_price: 3990,
+            discount: 20,
+            descript: 'подзаголовок/описание или ничего',
+        }               
+    }    
+
+
+    // заказ конкретного тарифа
+
+    $('#tariffs .choose-tarif').add('.action .choose-tarif').on(clickEvent, function () {
+
+        var tarif;
+        tarif = $(this).data('tarif');  
+                
+        $('#tarif-order .modal-title').text($.tarifs[tarif].name);
+        $('#tarif-order .modal-subtitle').text($.tarifs[tarif].descript);
+
+    });  
+
+
+
 
 });

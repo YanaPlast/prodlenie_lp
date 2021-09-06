@@ -21,7 +21,11 @@
 .faq .container,
 .n-faq .container,
 .gifts .container,
-.share .container {
+.share .container,
+.action .container,
+.remark .container,
+.remark-2 .container,
+.video-block .container {
     max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
@@ -202,7 +206,11 @@ template {
     .faq .container,
     .n-faq .container,
     .gifts .container,
-    .share .container {
+    .share .container,
+    .action .container,
+    .remark .container,
+    .remark-2 .container,
+    .video-block .container {
         padding-left: 24px;
         padding-right: 24px;
     }
@@ -227,7 +235,11 @@ template {
     .faq .container,
     .n-faq .container,
     .gifts .container,
-    .share .container {
+    .share .container,
+    .action .container,
+    .remark .container,
+    .remark-2 .container,
+    .video-block .container {
         padding-left: 15px;
         padding-right: 15px;
     }

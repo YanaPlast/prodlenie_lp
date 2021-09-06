@@ -126,14 +126,20 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
 
 <!-- <gtm>  -->
 
+<!-- Title: Продлите срок действия товарного знака в 3 клика
+
+Description: Автоматическое продление товарного знака. Пошлины со скидкой 30%. Бесплатное ходатайство о продлении знака.
+
+key: продление, срок, товарный, знак, действие, право, регистрация -->
+
 <body>
     <header class="header">
         <div class="header__wrapper container">
             <div class="header__logo">
                 <a href="">
                     <picture>
-                        <source srcset="img/logo.webp" type="image/webp">
-                        <img src="img/logo.jpg" alt="" title="Патентное бюро Железно">
+                        <source class="lazy" data-src="img/logo.webp" type="image/webp">
+                        <img class="lazy" data-src="img/logo.jpg" alt="" />
                     </picture>
                 </a>
                 <p class="header__brand-name">Патентное бюро</p>
@@ -156,13 +162,6 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
     </header>
 
     <main class=article-main>
-
-        <!--         <a data-fancybox="" data-src="#hidden-content" href="javascript:;">
-            Открыть окно
-        </a>
-        <div style="display: none;" id="hidden-content">
-            Встроенный HTML-элемент
-        </div> -->
 
         <div class="body-container">
 
@@ -192,7 +191,10 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                         <div class=partners__slider>
                             <div class=partners__item>
                                 <div class=partners__logo>
-                                    <img src="img/partners/svetlogorsk.png">
+                                    <picture>
+                                        <source srcset="img/partners/svetlogorsk.webp" type="image/webp">
+                                        <img src="img/partners/svetlogorsk.png" alt="" title="">
+                                    </picture>
                                 </div>
                                 <div class="partners__about">
                                     <p class="partners__title">Светлогорск</p>
@@ -201,7 +203,10 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                             </div>
                             <div class=partners__item>
                                 <div class=partners__logo>
-                                    <img src="img/partners/taezhnyj-kraj.png" alt=logo2>
+                                    <picture>
+                                        <source srcset="img/partners/taezhnyj-kraj.webp" type="image/webp">
+                                        <img src="img/partners/taezhnyj-kraj.png" alt="" title="">
+                                    </picture>
                                 </div>
                                 <div class="partners__about">
                                     <p class="partners__title">ООО “Дары Байкала”</p>
@@ -210,7 +215,10 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                             </div>
                             <div class=partners__item>
                                 <div class=partners__logo>
-                                    <img src="img/partners/bibliosha.png" alt=logo3>
+                                    <picture>
+                                        <source srcset="img/partners/bibliosha.webp" type="image/webp">
+                                        <img src="img/partners/bibliosha.png" alt="" title="">
+                                    </picture>
                                 </div>
                                 <div class="partners__about">
                                     <p class="partners__title">ООО “БГ Групп” (группа компаний “Библио-Глобус”)</p>
@@ -219,7 +227,10 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                             </div>
                             <div class=partners__item>
                                 <div class=partners__logo>
-                                    <img src="img/partners/ecoMarket.png" alt=logo4>
+                                    <picture>
+                                        <source srcset="img/partners/ecoMarket.webp" type="image/webp">
+                                        <img src="img/partners/ecoMarket.png" alt="" title="">
+                                    </picture>
                                 </div>
                                 <div class="partners__about">
                                     <p class="partners__title">ООО “Экомаркет”</p>
@@ -228,7 +239,10 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                             </div>
                             <div class=partners__item>
                                 <div class=partners__logo>
-                                    <img src="img/partners/HEPC.png" alt=logo5>
+                                    <picture>
+                                        <source srcset="img/partners/HEPC.webp" type="image/webp">
+                                        <img src="img/partners/HEPC.png" alt="" title="">
+                                    </picture>
                                 </div>
                                 <div class="partners__about">
                                     <p class="partners__title">ООО “Нефтехимическая компания НЕРС+”</p>
@@ -237,7 +251,10 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                             </div>
                             <div class=partners__item>
                                 <div class=partners__logo>
-                                    <img src="img/partners/myasnoi.png" alt=logo7>
+                                    <picture>
+                                        <source srcset="img/partners/myasnoi.webp" type="image/webp">
+                                        <img src="img/partners/myasnoi.png" alt="" title="">
+                                    </picture>
                                 </div>
                                 <div class="partners__about">
                                     <p class="partners__title">ИП Маргарян А.А.</p>
@@ -246,7 +263,10 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                             </div>
                             <div class=partners__item>
                                 <div class=partners__logo>
-                                    <img src="img/partners/rocketCall.png" alt=logo8>
+                                    <picture>
+                                        <source srcset="img/partners/rocketCall.webp" type="image/webp">
+                                        <img src="img/partners/rocketCall.png" alt="" title="">
+                                    </picture>
                                 </div>
                                 <div class="partners__about">
                                     <p class="partners__title">Поповичева А.И.</p>
@@ -305,9 +325,11 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
             </div>
 
             <div class="remark">
-                <div class="container remark__container remark__container_colored">
-                    <div class="main-subtitle remark__main-subtitle">Важно!</div>
-                    <p> Если срок продления вашего знака прошел - подготовим ходатайство в Роспатент. Бесплатно!</p>
+                <div class="container">
+                    <div class="remark__container remark__container_colored">
+                        <div class="main-subtitle remark__main-subtitle">Важно!</div>
+                        <p> Если срок продления вашего знака прошел - подготовим ходатайство в Роспатент. Бесплатно!</p>
+                    </div>
                 </div>
             </div>
 
@@ -376,13 +398,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                 </div>
                                 <div class="n2-tariffs__extra js-match-height-bottom">Ходатайство о продлении сроков продления - бесплатно!</div>
                                 <div class=n2-tariffs__wrap-btn>
-                                    <a href="#" class=g-btn7>Выбрать</a>
-                                    <br>
+                                    <a href="#tarif-order" class="fancybox g-btn7 choose-tarif" data-tarif="tz" data-fancybox="" href="javascript:;">Выбрать</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="n2-tariffs__wrap n2-tariffs__wrap--color">
+                        <div class=" n2-tariffs__wrap n2-tariffs__wrap--color">
                             <div class=n2-tariffs__item>
                                 <div class=js-match-height>
                                     <img class=n2-tariffs__icon src="img/icons/02.png">
@@ -402,7 +423,7 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                 </div>
                                 <div class="n2-tariffs__extra js-match-height-bottom">Пригодится, если изменился правообладатель или юридический адрес.</div>
                                 <div class=n2-tariffs__wrap-btn>
-                                    <a href="" class=g-btn8>Выбрать</a>
+                                    <a href="#tarif-order" class="fancybox g-btn7 choose-tarif" data-tarif="tz_changes" data-fancybox="" href="javascript:;">Выбрать</a>
                                     <br>
                                 </div>
                             </div>
@@ -428,7 +449,7 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                 </div>
                                 <div class="n2-tariffs__extra js-match-height-bottom">Продлить патент на изобретение можно 1 раз на 5 лет, в случае, если это агрохимикат, пестицид или лекарственное средство</div>
                                 <div class=n2-tariffs__wrap-btn>
-                                    <a href="#" class=g-btn7>Выбрать</a>
+                                    <a href="#tarif-order" class="fancybox g-btn7 choose-tarif" data-tarif="izobretenie" data-fancybox="" href="javascript:;">Выбрать</a>
                                     <br>
                                 </div>
                             </div>
@@ -454,7 +475,7 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                 </div>
                                 <div class="n2-tariffs__extra js-match-height-bottom">Продлить право на промышленный образец можно неоднократно, на 5 лет.</div>
                                 <div class=n2-tariffs__wrap-btn>
-                                    <a href="#" class=g-btn7>Выбрать</a>
+                                    <a href="#tarif-order" class="fancybox g-btn7 choose-tarif" data-tarif="prom_obrazec" data-fancybox="" href="javascript:;">Выбрать</a>
                                     <br>
                                 </div>
                             </div>
@@ -469,12 +490,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
             <div class="action">
                 <div class="action__container container">
                     <div class="action__grid">
-                        <div class="action__col action__col-left">
+                        <div class="action__col action__col_left">
                             <div class="action__title">Акция!</div>
-                            <div class="main-subtitle">Продлим исключительное право на <span class="uppercase">полезную модель</span> <span class="no-wrap">за 2 990 руб </span></div>
-                            <div class="action__button button-container">
-                                <a href="#" class="g-btn7 g-btn7_white">Продлить</a>
-                            </div>
+                            <div class="action__main-subtitle main-subtitle">Продлим исключительное право на <span class="uppercase">полезную модель</span> <span class="no-wrap">за 2 990 руб </span></div>
+                            <!--                                 <div class="action__button button-container">
+                                    <a href="#tarif-order" class="fancybox g-btn7 g-btn7_white choose-tarif" data-tarif="prom_obrazec" data-fancybox="" href="javascript:;">Продлить</a>
+                                </div> -->
                         </div>
                         <div class="action__col action__col_right">
                             <div class="action__col-wrapper">
@@ -488,6 +509,9 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                 </ul>
                                 <div class="action__summary">Ваш патент будет продлен вовремя! </div>
                             </div>
+                        </div>
+                        <div class="action__button button-container">
+                            <a href="#tarif-order" class="fancybox g-btn7 g-btn7_white choose-tarif" data-tarif="prom_obrazec" data-fancybox="" href="javascript:;">Продлить</a>
                         </div>
                     </div>
                 </div>
@@ -529,11 +553,15 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                 </div>
                                 <div class=ask__note>
                                     Бесплатный звонок для всей России <br>
-                                    Мы работаем <b>с 8:00 до 21:00</b> по московскому времени
+                                    Мы работаем <b>с 9:00 до 18:00</b> по московскому времени
                                 </div>
                             </div>
                             <div class="ask__col ask__col--right">
-                                <img class="js-scroll-add-cls-20 main-animate" src="img/437x629xexpert_steps.png.pagespeed.ic.ovlICh38hG.png" width=437 height=629 alt="Эксперт">
+                                <picture>
+                                    <source class="lazy" data-src="img/437x629xexpert_steps.png.pagespeed.ic.ovlICh38hG.webp" type="image/webp">
+                                    <img class="lazy js-scroll-add-cls-20 main-animate" data-src="img/437x629xexpert_steps.png.pagespeed.ic.ovlICh38hG.png" width=437 height=629 alt="Эксперт" />
+                                </picture>
+                                <!--    <img class="js-scroll-add-cls-20 main-animate" src="img/437x629xexpert_steps.png.pagespeed.ic.ovlICh38hG.png" width=437 height=629 alt="Эксперт"> -->
                                 <div class=n-faq__signature>
                                     <div class=n-faq__signature-box>
                                         <div class=n-faq__signature-name>Дина Никулина</div>
@@ -643,17 +671,6 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
             <div class=n-faq>
                 <div class="n-faq__container container">
                     <div class=n-faq__grid>
-                        <div class="n-faq__col n-faq__col--left">
-                            <div class=n-faq__expert-wrap>
-                                <img class="js-scroll-add-cls-20 main-animate" src="img/535xNxn2-expert-faq.png.pagespeed.ic.Yb9UHXgI5L.png" width=535 alt="Эксперт">
-                                <div class=n-faq__signature>
-                                    <div class=n-faq__signature-box>
-                                        <div class=n-faq__signature-name>Никулина Дина</div>
-                                        <div class=n-faq__signature-position>Специалист по сопровождению</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="n-faq__col n-faq__col--right">
                             <div class="n-faq__subtitle main-subtitle">ТОП-5 вопросов о продлении прав</div>
                             <div class=n-faq__accordion>
@@ -736,6 +753,7 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
             <div class=reviews>
                 <div class="reviews__container container">
                     <div class=reviews__title>Реальные отзывы наших клиентов</div>
+
                     <div class=reviews__slider>
 
                         <div class=reviews__item-wrap>
@@ -744,7 +762,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                     <div class=reviews__name>QFI</div>
                                     <a href="#" target=_blank class=reviews__tag>оптовая продажа непродовольственных товаров</a>
                                 </div>
-                                <img src="img/feedback/feedb1.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb1.jpg" data-fancybox="feedback" data-caption="QFI. Оптовая продажа непродовольственных товаров">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb1_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb1_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
@@ -754,7 +777,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                     <div class=reviews__name>HARDCRAFT</div>
                                     <a href="#" target=_blank class=reviews__tag>изготовление мебели</a>
                                 </div>
-                                <img src="img/feedback/feedb2.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb2.jpg" data-fancybox="feedback" data-caption="HARDCRAFT. Изготовление мебели">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb2_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb2_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
@@ -764,7 +792,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                     <div class=reviews__name>Jeweler One Master</div>
                                     <a href="#" target=_blank class=reviews__tag>Ювелирная мастерская</a>
                                 </div>
-                                <img src="img/feedback/feedb3.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb3.jpg" data-fancybox="feedback" data-caption="Jeweler One Master. Ювелирная мастерская">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb3_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb3_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
@@ -774,7 +807,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                     <div class=reviews__name>LASCALI</div>
                                     <a href="#" target=_blank class=reviews__tag>производство декоративной и лечебной косметики</a>
                                 </div>
-                                <img src="img/feedback/feedb4.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb4.jpg" data-fancybox="feedback" data-caption="LASCALI. Производство декоративной и лечебной косметики">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb4_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb4_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
@@ -784,17 +822,27 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                     <div class=reviews__name>MALVICOSMETICS</div>
                                     <a href="#" target=_blank class=reviews__tag>производство косметики</a>
                                 </div>
-                                <img src="img/feedback/feedb5.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb5.jpg" data-fancybox="feedback" data-caption="MALVICOSMETICS. Производство косметики">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb5_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb5_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
                         <div class=reviews__item-wrap>
                             <div class=reviews__item>
                                 <div class=reviews__block-info>
-                                    <div class=reviews__name>TWOCSU </div>
+                                    <div class=reviews__name>TWOCSU</div>
                                     <a href="#" target=_blank class=reviews__tag>производство топливных брикетов из дерева</a>
                                 </div>
-                                <img src="img/feedback/feedb6.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb6.jpg" data-fancybox="feedback" data-caption="TWOCSU. Производство топливных брикетов из дерева">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb6_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb6_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
@@ -804,7 +852,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                     <div class=reviews__name>ГРИЛЬВИЧ</div>
                                     <a href="#" target=_blank class=reviews__tag>ресторан, общепит, фудкорт, доставка еды</a>
                                 </div>
-                                <img src="img/feedback/feedb7.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb7.jpg" data-fancybox="feedback" data-caption="ГРИЛЬВИЧ. Ресторан, общепит, фудкорт, доставка еды">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb7_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb7_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
@@ -814,7 +867,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                     <div class=reviews__name>МУРЛЭНД</div>
                                     <a href="#" target=_blank class=reviews__tag>производство и продажа одежды для животных</a>
                                 </div>
-                                <img src="img/feedback/feedb8.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb8.jpg" data-fancybox="feedback" data-caption="МУРЛЭНД. Производство и продажа одежды для животных">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb8_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb8_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
@@ -824,7 +882,12 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
                                     <div class=reviews__name>ЯРАД</div>
                                     <a href="#" target=_blank class=reviews__tag>магазин универсам, одежда, обувь, детские вещи</a>
                                 </div>
-                                <img src="img/feedback/feedb9.jpg" alt="">
+                                <a class="reviews__item-wrap" href="img/feedback/feedb9.jpg" data-fancybox="feedback" data-caption="ЯРАД. Магазин универсам, одежда, обувь, детские вещи">
+                                    <picture>
+                                        <source class="lazy" data-src="img/feedback/feedb9_min.webp" type="image/webp">
+                                        <img class="lazy" data-src="img/feedback/feedb9_min.jpg" alt="" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
 
@@ -959,12 +1022,9 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
             <p class="modal-subtitle">(шаг 1 из 2)</p>
             <form method="post">
                 <div class="hide"><label><input type="text" name="name_family" placeholder="Ваше имя фамилия"></label></div>
-                <input type="hidden" name="title" value="Call-order"><span class="name"></span>
+                <input type="hidden" name="title" value="step1"><span class="name"></span>
                 <label for="name" class="columns"><input type="text" name="name" placeholder="Имя" data-hint="имя" autocomplete="off"><span class="name"></span></label>
                 <label for="phone" class="columns"><input type="tel" name="phone" placeholder="Телефон" data-hint="телефон" autocomplete="off"><span class="phone"></span></label>
-                <!-- <input type="submit" value="Далее" class="g-btn6"> -->
-                <!--                 <a class="g-btn6 fancybox" data-src="#step2" data-fancybox="" href="">Далее</a> -->
-                <!--  <a class="g-btn6" href="#" id="call-second-step">Далее</a> -->
                 <input type="submit" id="call-second-step" value="Далее" class="g-btn6">
             </form>
         </div>
@@ -974,20 +1034,35 @@ if (strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
         <div class="form-container">
             <p class="modal-title">Введите данные о знаке</p>
             <p class="modal-subtitle">(шаг 2 из 2)</p>
-            <!--             <form method="post" action="success-prodlenie.php"> -->
             <form method="post" action="success-prodlenie.php">
                 <div class="hide"><label><input type="text" name="name_family" placeholder="Ваше имя фамилия"></label></div>
                 <input type="hidden" name="title" value="step-two"><span class="name"></span>
-                <label for="number" class="columns"><input type="text" name="number" placeholder="Номер свидетельства о регистрации" data-hint="номер свидетельства" autocomplete="off"><span class="name number"></span></label>
+                <label for="number" class="columns"><input onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;" type="text" name="number" placeholder="Номер свидетельства о регистрации" data-hint="номер свидетельства" autocomplete="off"><span class="name number"></span></label>
                 <label for="owner" class="columns"><input type="text" name="owner" placeholder="Правообладатель знака" data-hint="правообладателя" autocomplete="off"><span class="name"></span></label>
+                <div class="form-subtext form-subtext_owner">* укажите ИП или название ООО</div>
                 <label for="email" class="columns"><input type="email" name="email" placeholder="e-mail" data-hint="e-mail" autocomplete="off"><span class="email"></span></label>
-                <div class="form-subtext">*на почту придут документы о продлении</div>
+                <div class="form-subtext">* на почту придут документы о продлении</div>
                 <input id="send-order" type="submit" value="Отправить" class="g-btn6">
             </form>
         </div>
     </div>
 
+    <div id="tarif-order" class="form-popup">
+        <div class="form-container">
+            <p class="modal-title">Продление товарного знака</p>
+            <p class="modal-subtitle">подзаголовок</p>
+            <form method="post" action="success.php">
+                <div class="hide"><label><input type="text" name="name_family" placeholder="Ваше имя фамилия"></label></div>
+                <input type="hidden" name="title" value="tarif-order"><span class="name"></span>
+                <label for="name" class="columns"><input type="text" name="name" placeholder="Имя" data-hint="имя" autocomplete="off"><span class="name"></span></label>
+                <label for="phone" class="columns"><input type="tel" name="phone" placeholder="Телефон" data-hint="телефон" autocomplete="off"><span class="phone"></span></label>
+                <input type="submit" value="Заказать" class="g-btn6">
+            </form>
+        </div>
+    </div>
+
     <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/lazyload.min.js"></script>
 </body>
 
 </html>

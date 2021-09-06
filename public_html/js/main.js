@@ -191,9 +191,9 @@ $(document).ready(function () {
             appendArrows: $(".partners__arrows"),
             appendDots: $(".partners__dots"),
             responsive: [
-                { breakpoint: 960, settings: { slidesToShow: 4 } },
+                { breakpoint: 960, settings: { slidesToShow: 3 } },
                 { breakpoint: 768, settings: { slidesToShow: 3 } },
-                { breakpoint: 560, settings: { slidesToShow: 1 } },
+                { breakpoint: 560, settings: { slidesToShow: 3} },
             ],
         });
     })();
@@ -488,7 +488,7 @@ $(document).ready(function () {
             arrows: true,
             prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><svg class="icon-el"><use xlink:href="#arrow-l3"></use></svg></button>',
             nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><svg class="icon-el"><use xlink:href="#arrow-r3"></use></svg></button>',
-            slidesToShow: 2,
+            slidesToShow: 3,
             dots: false,
             draggable: true,
             focusOnSelect: false,

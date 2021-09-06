@@ -5830,7 +5830,7 @@ html,
 .partners__logo {
     box-sizing: border-box;
 /*     max-height: 62px; */
-    max-height: 110px;
+    max-height: 140px;
     height: 300px;
     display: -ms-flexbox;
     display: flex;
@@ -5841,7 +5841,7 @@ html,
 }
 .partners__about {
     margin: 20px auto 0 auto;
-    padding: 15px 16px 0 0;
+    padding: 15px 0 0 0;
     position: relative;
     max-width: 200px;
 }
@@ -5957,6 +5957,7 @@ html,
     .experience__title {
         margin-bottom: 32px;
         font-size: 32px;
+        text-align: center;
     }
 }
 .experience__grid {
@@ -5979,21 +5980,36 @@ html,
     -webkit-text-fill-color: transparent;
     margin-bottom: 9px;
 }
-@media screen and (max-width: 1300px) {
-    .experience__num {
-        font-size: 36px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .experience__num {
-        font-size: 24px;
-    }
-}
 .experience__sub {
     font-size: 16px;
     line-height: 140%;
     color: #788fa9;
     max-width: 260px;
+}
+@media screen and (max-width: 960px) {
+    .experience__num {
+        font-size: 55px;
+    }
+    .experience__item {
+        width: 29%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .experience__grid {
+        justify-content: center;
+    }
+    .experience__item {
+        width: 80%;
+        text-align: center;
+    }
+    .experience__sub {
+        max-width: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .experience__num {
+        font-size: 50px;
+    }
 }
 .help {
     padding-bottom: 96px;
@@ -7089,7 +7105,7 @@ html,
 .n2-tariffs__wrap {
     outline: 0;
     width: 100%;
-    margin: 0 13px 32px;
+    margin: 0 7px 32px;
     position: relative;
 }
 @media screen and (max-width: 450px) {
@@ -7116,7 +7132,7 @@ html,
 .n2-tariffs__item {
     box-sizing: border-box;
     overflow: hidden;
-    padding: 21px 30px 33px 30px;
+    padding: 21px 15px 33px 28px;
     background: #fff;
     text-align: center;
     border: 1px solid #eaeaea;
@@ -7152,11 +7168,10 @@ html,
 .n2-tariffs__name {
     margin: 4px 0 20px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 120%;
     text-align: center;
     color: #333;
-    height: 88px;
 }
 @media screen and (max-width: 400px) {
     .n2-tariffs__name {
@@ -7261,6 +7276,30 @@ html,
 }
 
 */
+@media screen and (max-width: 768px) {
+    .n2-tariffs__desc {
+        text-align: center;
+        line-height: 1.1;
+        padding-bottom: 25px;
+    }
+    .n2-tariffs__desc li:not(:last-child) {
+        margin-bottom: 7px;
+    }
+    .n2-tariffs__extra {
+        text-align: center;
+    }
+    .n2-tariffs__extra:before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .n2-tariffs__name {
+        min-height: 44px;
+        max-width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .max {
     padding: 96px 0;
     background: url(../img/bg_max.svg) no-repeat center/cover;
@@ -8347,6 +8386,19 @@ html,
 @media screen and (max-width: 767px) {
     .reviews__item {
         max-width: none;
+        width: 450px;
+        margin: 0 auto;
+    }
+    .reviews__block-info {
+        text-align: center;
+        padding-left: 0;
+    }
+    .reviews__item img {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    .reviews__item {
         width: 100%;
     }
 }
@@ -8690,7 +8742,7 @@ html,
     color: #788fa9;
 }
 .n-faq__col {
-    width: 50%;
+    width: 100%;
 }
 @media screen and (max-width: 768px) {
     .n-faq__col {
@@ -8698,7 +8750,6 @@ html,
     }
 }
 .n-faq__col--right {
-    padding-right: 32px;
     order: -1;
 }
 @media screen and (max-width: 768px) {
@@ -8775,7 +8826,7 @@ html,
     padding: 25px;
     display: none;
     box-sizing: border-box;
-    max-width: 544px;
+    width: 100%;
 }
 .n-faq__text p {
     color: #788fa9;
